@@ -1,6 +1,6 @@
-import React from 'react'
 import {AiFillEye,AiFillEyeInvisible } from 'react-icons/ai'
 import {useState } from 'react'
+import { Link } from "react-router-dom";
 import OAuth from '../components/OAuth';
 
 export default function SignIn() {
@@ -43,14 +43,15 @@ export default function SignIn() {
           </div>
           <div className='flex justify-between whitespace-nowrap text-sm sm:text-lg'>
             <p className='mb-6'>Don't have an account?
-              <link to ="/sign-up" 
-              className='text-red-600 hover:text-red-700 transition duration-200 ease-in-out ml-1'> 
-              Register</link>
+              <Link to ="/sign-up" 
+              className='text-red-600 hover:text-red-700 transition duration-200 ease-in-out ml-1'
+              > 
+               Register</Link>
             </p>
             <p>
-              <link to="/forgot-password" 
+              <Link to="/forgot-password" 
               className='text-blue-600 hover:text-blue-800 transition duration-200 ease-in-out'> 
-              Forgot Password?</link>
+              Forgot Password?</Link>
             </p>
           </div>
           <button className='w-full bg-blue-600 text-white px-7 py-3 text-sm font-medium uppercase rounded shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800' type='submit'>Sign In
