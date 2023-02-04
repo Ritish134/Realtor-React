@@ -29,7 +29,7 @@ export default function ListingItem({listing,id,onEdit,onDelete}) {
                 $
                 {listing.offer
                 ? listing.discountedPrice
-                .toSting()
+                .toString()
                 .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
                 : listing.regularPrice
                 .toString()
